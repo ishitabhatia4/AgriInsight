@@ -54,8 +54,8 @@ st.caption(caption)
 # 🗂️ Load Data
 @st.cache_data
 def load_data():
-    crops = pd.read_csv("crop_production.csv")
-    rain = pd.read_csv("rainfall_data.csv")
+    crops = pd.read_csv("data/crop_production.csv")
+    rain = pd.read_csv("data/rainfall_data.csv")
     return crops, rain
 
 crop_data, rain_data = load_data()
